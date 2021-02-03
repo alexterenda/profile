@@ -190,6 +190,18 @@ ul {
   margin-top: 0;
 }
 
+.row {
+  flex-direction: row;
+  justify-content: center;
+}
+
+.finger {
+  font-size: 36rem;
+  padding: 12rem;
+  padding-left: 24rem;
+  padding-right: 24rem;
+}
+
 .overlay {
   position: absolute;
   pointer-events: none;
