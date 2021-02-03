@@ -96,11 +96,13 @@ a {
   transition: var(--transition);
   cursor: pointer;
   color: var(--lilac-500);
+  border-style: 2px solid rgba(0,0,0,0);
 }
 
 a:hover,
 a:focus {
   color: var(--lilac-300);
+  border-style: 2px solid #ced2fa;
 }
 
 
@@ -141,7 +143,6 @@ button {
   cursor: pointer;
   border: 0px solid black;
   transition: var(--transition);
-
 }
 
 button:hover {
@@ -222,7 +223,6 @@ ul {
    -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: 600;
-
 }
 
 .purple {
@@ -279,7 +279,7 @@ background-color: #3ccf83;
   cursor: pointer;
   position: relative;
   transition: transform ease-in 0.1s, box-shadow ease-in 0.25s;
-  box-shadow: 0 2px 25px rgba(180, 89, 255, 0.2);
+  box-shadow: 0 2px 25px rgba(180, 89, 255, 0.5);
 }
 
 .confetti-button:focus { outline: 0; }
@@ -313,7 +313,7 @@ background-color: #3ccf83;
 .confetti-button:active {
   transform: scale(0.9);
   background-color: #a259ff;
-  box-shadow: 0 2px 25px rgba(180, 89, 255, 0.2);
+  box-shadow: 0 2px 25px rgba(180, 89, 255, 0.4);
 }
 
 .confetti-button.animate:before {
