@@ -313,7 +313,7 @@ background-color: #3ccf83;
 .confetti-button:active {
   transform: scale(0.9);
   background-color: #a259ff;
-  box-shadow: 0 2px 25px rgba(180, 89, 255, 0.4);
+  box-shadow: 0 2px 25px rgba(180, 89, 255, 0.2);
 }
 
 .confetti-button.animate:before {
