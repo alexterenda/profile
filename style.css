@@ -8,13 +8,13 @@
   --slate-850: #1c1d1f;
   --slate-900: #121212;
 
-  --purple-fill:;
-  --purple-start:;
-  --purple-end:;
+  --purple-fill: ;
+  --purple-start: ;
+  --purple-end: ;
 
-  --blue-fill:;
-  --blue-start:;
-  --blue-end:;
+  --blue-fill: ;
+  --blue-start: ;
+  --blue-end: ;
 
   --overlay-start: rgba(7, 2, 168, 0.06);
   --overlay-end: rgba(128, 57, 158, 0.06);
@@ -22,7 +22,7 @@
   --tile-start: #28292c;
   --tile-end: rgba(39, 40, 43, 0.82);
 
-  --font-sans: "Inter", -apple-system, system-ui, sans-serif;
+  --font-sans: 'Inter', -apple-system, system-ui, sans-serif;
 
   --transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
@@ -72,7 +72,7 @@ h6 {
   font-weight: 600;
   color: var(--slate-300);
   line-height: 1.1;
-  text-align: center
+  text-align: center;
 }
 
 h1 {
@@ -96,7 +96,7 @@ a {
   transition: var(--transition);
   cursor: pointer;
   color: var(--lilac-500);
-  border-style: 2px solid rgba(0,0,0,0);
+  border-style: 2px solid rgba(0, 0, 0, 0);
 }
 
 a:hover,
@@ -104,7 +104,6 @@ a:focus {
   color: var(--lilac-300);
   border-style: 2px solid #ced2fa;
 }
-
 
 li {
   list-style-type: none;
@@ -117,8 +116,8 @@ i {
 }
 
 i:hover {
-  transform:scale(1.2);
-  transform:translateY(-2rem)
+  transform: scale(1.2);
+  transform: translateY(-2rem);
 }
 
 button {
@@ -127,9 +126,9 @@ button {
   padding: 10rem 16rem;
   border-radius: 12rem;
   background-color: #675dd9;
-  background-image: linear-gradient(150deg,#675cd9,rgba(180,89,255,.9));
-  -webkit-transition: border .2s ease;
-  transition: border .2s ease;
+  background-image: linear-gradient(150deg, #675cd9, rgba(180, 89, 255, 0.9));
+  -webkit-transition: border 0.2s ease;
+  transition: border 0.2s ease;
   color: var(--slate-150);
   font: var(--font-sans);
   font-size: 20rem;
@@ -146,7 +145,7 @@ button {
 }
 
 button:hover {
-  transform: scale(1.05)
+  transform: scale(1.05);
 }
 
 ul {
@@ -166,21 +165,16 @@ ul {
   max-width: 420rem;
   width: 100%;
   padding: 16rem;
-  border-radius:  16rem;
+  border-radius: 16rem;
   margin: 0 auto;
-    box-shadow: 0px 13px 40px rgba(0, 0, 0, 0.3), 0px 4px 4px rgba(0, 0, 0, 0.2);
-
+  box-shadow: 0px 13px 40px rgba(0, 0, 0, 0.3), 0px 4px 4px rgba(0, 0, 0, 0.2);
 }
 
 .card {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: linear-gradient(
-    45deg,
-    var(--tile-start),
-    var(--tile-end)
-  );
+  background: linear-gradient(45deg, var(--tile-start), var(--tile-end));
   border-radius: 16rem;
   padding: 16rem;
   margin-top: 16rem;
@@ -194,6 +188,11 @@ ul {
 .row {
   flex-direction: row;
   justify-content: center;
+}
+
+.text-small {
+  font-size: 14rem;
+  line-height: 18rem;
 }
 
 .finger {
@@ -220,36 +219,29 @@ ul {
 }
 
 .gradient {
-   -webkit-background-clip: text;
+  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: 600;
 }
 
 .purple {
   background-color: #a259ff;
-   background-image: linear-gradient(
-151deg
-,#a259ff,#ff7262);
-     border-bottom: 2px solid rgba(0, 0, 0, 0);
-
+  background-image: linear-gradient(151deg, #a259ff, #ff7262);
+  border-bottom: 2px solid rgba(0, 0, 0, 0);
 }
 
 .pink:hover {
-      border-bottom: 2px solid var(--lilac-300);
+  border-bottom: 2px solid var(--lilac-300);
 }
 
 .green {
-background-color: #3ccf83;
-    background-image: linear-gradient(
-151deg
-,#08cf83,rgba(80,226,219,.56));
+  background-color: #3ccf83;
+  background-image: linear-gradient(151deg, #08cf83, rgba(80, 226, 219, 0.56));
 }
 
 .blue {
   background-color: #1bbcfe;
-    background-image: linear-gradient(
-151deg
-,#1cbcfe,rgba(118,255,235,.88));
+  background-image: linear-gradient(151deg, #1cbcfe, rgba(118, 255, 235, 0.88));
 }
 
 /*
@@ -273,7 +265,7 @@ background-color: #3ccf83;
 .confetti-button {
   -webkit-appearance: none;
   appearance: none;
-  background-color: #B459FF;
+  background-color: #b459ff;
   color: #fff;
   border: none;
   cursor: pointer;
@@ -282,9 +274,12 @@ background-color: #3ccf83;
   box-shadow: 0 2px 25px rgba(180, 89, 255, 0.5);
 }
 
-.confetti-button:focus { outline: 0; }
+.confetti-button:focus {
+  outline: 0;
+}
 
-.confetti-button:before, .confetti-button:after {
+.confetti-button:before,
+.confetti-button:after {
   position: absolute;
   content: '';
   display: block;
@@ -299,14 +294,29 @@ background-color: #3ccf83;
 .confetti-button:before {
   display: none;
   top: -75%;
-  background-image: radial-gradient(circle, #B459FF 20%, transparent 20%), radial-gradient(circle, transparent 20%, #B459FF 20%, transparent 30%), radial-gradient(circle, #B459FF 20%, transparent 20%), radial-gradient(circle, #B459FF 20%, transparent 20%), radial-gradient(circle, transparent 10%, #B459FF 15%, transparent 20%), radial-gradient(circle, #B459FF 20%, transparent 20%), radial-gradient(circle, #B459FF 20%, transparent 20%), radial-gradient(circle, #B459FF 20%, transparent 20%), radial-gradient(circle, #B459FF 20%, transparent 20%);
-  background-size: 10% 10%, 20% 20%, 15% 15%, 20% 20%, 18% 18%, 10% 10%, 15% 15%, 10% 10%, 18% 18%;
+  background-image: radial-gradient(circle, #b459ff 20%, transparent 20%),
+    radial-gradient(circle, transparent 20%, #b459ff 20%, transparent 30%),
+    radial-gradient(circle, #b459ff 20%, transparent 20%),
+    radial-gradient(circle, #b459ff 20%, transparent 20%),
+    radial-gradient(circle, transparent 10%, #b459ff 15%, transparent 20%),
+    radial-gradient(circle, #b459ff 20%, transparent 20%),
+    radial-gradient(circle, #b459ff 20%, transparent 20%),
+    radial-gradient(circle, #b459ff 20%, transparent 20%),
+    radial-gradient(circle, #b459ff 20%, transparent 20%);
+  background-size: 10% 10%, 20% 20%, 15% 15%, 20% 20%, 18% 18%, 10% 10%, 15% 15%,
+    10% 10%, 18% 18%;
 }
 
 .confetti-button:after {
   display: none;
   bottom: -75%;
-  background-image: radial-gradient(circle, #B459FF 20%, transparent 20%), radial-gradient(circle, #B459FF 20%, transparent 20%), radial-gradient(circle, transparent 10%, #B459FF 15%, transparent 20%), radial-gradient(circle, #B459FF 20%, transparent 20%), radial-gradient(circle, #B459FF 20%, transparent 20%), radial-gradient(circle, #B459FF 20%, transparent 20%), radial-gradient(circle, #B459FF 20%, transparent 20%);
+  background-image: radial-gradient(circle, #b459ff 20%, transparent 20%),
+    radial-gradient(circle, #b459ff 20%, transparent 20%),
+    radial-gradient(circle, transparent 10%, #b459ff 15%, transparent 20%),
+    radial-gradient(circle, #b459ff 20%, transparent 20%),
+    radial-gradient(circle, #b459ff 20%, transparent 20%),
+    radial-gradient(circle, #b459ff 20%, transparent 20%),
+    radial-gradient(circle, #b459ff 20%, transparent 20%);
   background-size: 15% 15%, 20% 20%, 18% 18%, 20% 20%, 15% 15%, 10% 10%, 20% 20%;
 }
 
@@ -325,27 +335,33 @@ background-color: #3ccf83;
   display: block;
   animation: bottomBubbles ease-in-out 0.75s forwards;
 }
- @keyframes
-topBubbles {  0% {
- background-position: 5% 90%, 10% 90%, 10% 90%, 15% 90%, 25% 90%, 25% 90%, 40% 90%, 55% 90%, 70% 90%;
+@keyframes topBubbles {
+  0% {
+    background-position: 5% 90%, 10% 90%, 10% 90%, 15% 90%, 25% 90%, 25% 90%,
+      40% 90%, 55% 90%, 70% 90%;
+  }
+  50% {
+    background-position: 0% 80%, 0% 20%, 10% 40%, 20% 0%, 30% 30%, 22% 50%,
+      50% 50%, 65% 20%, 90% 30%;
+  }
+  100% {
+    background-position: 0% 70%, 0% 10%, 10% 30%, 20% -10%, 30% 20%, 22% 40%,
+      50% 40%, 65% 10%, 90% 20%;
+    background-size: 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%;
+  }
 }
- 50% {
- background-position: 0% 80%, 0% 20%, 10% 40%, 20% 0%, 30% 30%, 22% 50%, 50% 50%, 65% 20%, 90% 30%;
-}
- 100% {
- background-position: 0% 70%, 0% 10%, 10% 30%, 20% -10%, 30% 20%, 22% 40%, 50% 40%, 65% 10%, 90% 20%;
- background-size: 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%;
-}
-}
-@keyframes
-bottomBubbles {  0% {
- background-position: 10% -10%, 30% 10%, 55% -10%, 70% -10%, 85% -10%, 70% -10%, 70% 0%;
-}
- 50% {
- background-position: 0% 80%, 20% 80%, 45% 60%, 60% 100%, 75% 70%, 95% 60%, 105% 0%;
-}
- 100% {
- background-position: 0% 90%, 20% 90%, 45% 70%, 60% 110%, 75% 80%, 95% 70%, 110% 10%;
- background-size: 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%;
-}
+@keyframes bottomBubbles {
+  0% {
+    background-position: 10% -10%, 30% 10%, 55% -10%, 70% -10%, 85% -10%,
+      70% -10%, 70% 0%;
+  }
+  50% {
+    background-position: 0% 80%, 20% 80%, 45% 60%, 60% 100%, 75% 70%, 95% 60%,
+      105% 0%;
+  }
+  100% {
+    background-position: 0% 90%, 20% 90%, 45% 70%, 60% 110%, 75% 80%, 95% 70%,
+      110% 10%;
+    background-size: 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%;
+  }
 }
